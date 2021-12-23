@@ -1,6 +1,6 @@
 import "./testimonials.css"
 
-export default function testimonials() {
+export default function Testimonials() {
     return (
         <div className = "testimonial">
             "Testimonial"
