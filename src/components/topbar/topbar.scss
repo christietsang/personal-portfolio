@@ -1,7 +1,32 @@
+@import "../../global.scss";
+
 .topbar{
-    background-color: brown;
+    background-color: $mainColor;
     height: 80px;
     position: fixed;
+    background-color: white;
+    color: $mainColor;
     top: 0;
     width: 100%;
-}
+    z-index: 1;
+
+    .wrapper{
+        padding: 10px 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .left{
+        .title-color {
+        color: blue;
+        }
+    
+    .title{
+        font-size: 40px;
+        font-weight: 700;
+        text-decoration: none;
+        letter-spacing: -1px;
+
+    }
+}}
