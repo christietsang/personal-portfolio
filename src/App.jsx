@@ -1,11 +1,11 @@
-import Topbar from "./components/topbar/topbar";
+import Topbar from "./components/topbar/Topbar";
 import Menu from "./components/intro/menu/Menu";
-import Contact from "./components/contact/contact";
-import Intro from "./components/intro/intro";
-import Portfolio from "./components/portfolio/portfolio";
-import Testimonials from "./components/testimonials/testimonials";
-import Works from "./components/works/works";
-import "./app.scss"
+import Contact from "./components/contact/Contact";
+import Intro from "./components/intro/Intro";
+import Portfolio from "./components/portfolio/Portfolio";
+import Testimonials from "./components/testimonials/Testimonials";
+import Works from "./components/works/Works";
+import "./app.scss";
 import React, {useState } from "react";
 
 

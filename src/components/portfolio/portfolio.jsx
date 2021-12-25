@@ -1,13 +1,37 @@
-import "./portfolio.scss"
+import "./portfolio.scss";
+import { useEffect, useState } from "react";
+import PortfolioList from "../portfolioList/PortfolioList";
 
 export default function Portfolio() {
+    const [selected, setSelected] = useState("web");
+
+    const list = [
+        {
+            id: "web",
+            title: "Web App",
+        },
+        {
+            id: "game",
+            title: "Games",
+        },
+        {
+            id: "design",
+            title: "Design",
+        },  
+    ];
+    
     return (
         <div className = "portfolio" id="portfolio">
             <h1>Portfolio</h1>
             <ul>
-                <li className="active">Web App</li>
-                <li>Games</li>
-                <li>Design</li>
+                {list.map((item) => (
+                    <PortfolioList 
+                    title={item.title}
+                    active={selected === item.id}
+                    setSelected={setSelected}
+                    id={item.id}      
+                    />
+                ))}
             </ul>
             <div className="container">
                 <div className="item">
