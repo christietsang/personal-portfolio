@@ -8,7 +8,8 @@
     color: $mainColor;
     top: 0;
     width: 100%;
-    z-index: 1;
+    z-index: 2;
+    transition: all 1s ease;
 
     .wrapper {
         padding: 10px 30px;
