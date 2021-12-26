@@ -1,7 +1,4 @@
 import './topbar.scss'
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import EmailIcon from '@mui/icons-material/Email';
-import GitHubIcon from '@mui/icons-material/GitHub';
 
 export default function Topbar({ menuOpen, setMenuOpen }) {
     return (
@@ -9,7 +6,7 @@ export default function Topbar({ menuOpen, setMenuOpen }) {
             <div className="wrapper">
                 <div className="left">
                     <a href="#intro" className="title">my<span class="title-color">Portfolio.</span></a>
-                    <div className="itemContainer">
+                    {/* <div className="itemContainer">
                         <LinkedInIcon className="icon"/>
                     </div>
                     <div className="itemContainer">
@@ -17,7 +14,7 @@ export default function Topbar({ menuOpen, setMenuOpen }) {
                     </div>
                     <div className="itemContainer">
                         <EmailIcon className="icon" />
-                    </div>
+                    </div> */}
                 </div>
                 <div className="right">
                     <div className="hamburger" onClick={()=>setMenuOpen(!menuOpen)}>
