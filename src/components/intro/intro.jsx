@@ -11,24 +11,15 @@ export default function Intro() {
             <div className="profile-parent">
                 <div className="profile-details">
                     <div className="colz">
-                        <div className="itemContainer">
+                        <div className="colz-icon">
                             <a href="https://www.linkedin.com/in/christietsang/">
                                 <LinkedInIcon className="icon" />
                             </a>
-                        </div>
-                        <a href="https://github.com/christietsang">
-                            <div className="itemContainer">
+                            <a href="https://github.com/christietsang">
                                 <GitHubIcon className="icon" />
-                            </div>
-                        </a>
-                        <div className="itemContainer">
+                            </a>
                             <a href="mailto:ctsang74@my.bcit.ca">
                                 <EmailIcon className="icon" />
-                            </a>
-                        </div>
-                        <div className="itemContainer">
-                            <a href="#portfolio">
-                                <KeyboardArrowDownIcon className="icon" />
                             </a>
                         </div>
                     </div>
@@ -44,33 +35,37 @@ export default function Intro() {
                             <h1>
                                 {" "}
                                 <Typical
-                                loop={Infinity}
-                                steps={[
-                                    "Enthusiastic Dev",
-                                    2000,
-                                    "Full Stack Developer",
-                                    2000,
-                                    "Motivated Student",
-                                    2000,
-                                ]}
+                                    loop={Infinity}
+                                    steps={[
+                                        "Enthusiastic Dev",
+                                        2000,
+                                        "Full Stack Developer",
+                                        2000,
+                                        "Motivated Student",
+                                        2000,
+                                    ]}
                                 />
                             </h1>
                             <span className="profile-role-tagline">
-                                A self-motivated and inquisitive computer science student who 
+                                A self-motivated and inquisitive computer science student who
                                 enjoys the process of problem-solving.
                             </span>
                         </span>
                     </div>
                     <div className="profile-options">
-                        <button className="profile-button">
-                            {""}Hire Me{" "}
-                        </button>
-                        <button className="profile-button">
-                            {""}See Resume{" "}
-                        </button>
+                        <button className="profile-button">{""}Hire Me{" "}</button>
+                        <a href="Resume.pdf" download="Resume.pdf"><button className="profile-button">Get Resume</button></a>
                     </div>
                 </div>
+                <div className="profile-picture"></div>
+                <div className="profile-picture-background"></div>
             </div>
+            <div className='bottom-navigation'>
+                <a href="#portfolio">
+                    <KeyboardArrowDownIcon className="icon" />
+                </a>
+            </div>
+
         </div>
     )
 }
