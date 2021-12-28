@@ -10,8 +10,8 @@ export default function Intro() {
         <div className="intro" id="intro">
             <div className="profile-parent">
                 <div className="profile-details">
-                    <div className="colz">
-                        <div className="colz-icon">
+                    <div className="profile-icon-overhead">
+                        <div className="profile-icons">
                             <a href="https://www.linkedin.com/in/christietsang/">
                                 <LinkedInIcon className="icon" />
                             </a>
@@ -24,13 +24,13 @@ export default function Intro() {
                         </div>
                     </div>
                     <div className="profile-details-name">
-                        <span className="primary-text">
+                        <span className="main-text">
                             {" "}
-                            Hello, I'm <span className="highlighted-text">Christie</span>
+                            Hello, I'm <span className="emphasis-text">Christie</span>
                         </span>
                     </div>
                     <div className="profile-details-role">
-                        <span className="primary-text">
+                        <span className="main-text">
                             {" "}
                             <h1>
                                 {" "}
@@ -57,8 +57,9 @@ export default function Intro() {
                         <a href="Resume.pdf" download="Resume.pdf"><button className="profile-button">Get Resume</button></a>
                     </div>
                 </div>
-                <div className="profile-picture"></div>
-                <div className="profile-picture-background"></div>
+                <div className="picture-container">
+                    <div className="profile-picture"></div>
+                </div>
             </div>
             <div className='bottom-navigation'>
                 <a href="#portfolio">
