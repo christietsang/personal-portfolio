@@ -4,110 +4,297 @@
     outline: none;
 }
 
-body {
-    margin: 0;
-    overflow: display;
+@media screen and (min-width: 1200px){
+    body {
+        margin: 0;
+        overflow: display;
 
-    .intro {
-        display: flex;
-        align-items: center;
-        text-align: center;
-        justify-content: center;
-        height: 10%;
-        min-height: fit-content;
-        background-image: url('../../assets/bg.jpg');
-
-        .profile-parent {
+        .intro {
             display: flex;
             align-items: center;
-            color: aliceblue;
-            height: 100vh;
-            width: 100vw;
+            text-align: center;
+            justify-content: center;
+            height: 10%;
+            min-height: fit-content;
+            background-image: url('../../assets/bg.jpg');
+            flex-direction: column;
 
-            .profile-details {
-                a {
-                    text-decoration: none;
-                    color: rgb(255, 255, 255);
-                }
-
-
-                .profile-details-name {
-                    font-size: 24px;
-                    font-family: Poppins Semibold;
-
-                    .main-text {
-                        color: $white;
-                    }
-
-                    .emphasis-text {
-                        color: $darkOrange;
-                    }
-                }
-
-                .profile-details-role {
-                    display: flex;
-                    flex-direction: column;
-                    margin: 14px 0 24px 0;
-
-                    h1 {
-                        font-size: 40px;
-                    }
-
-                    .profile-role-tagline {
-                        font-size: 19px;
-                        margin: 5px 0 0 0;
-                        font-family: Poppins Light;
-                    }
-                }
-
-                .profile-options {
-
-                    button {
-                        border-radius: 50px;
-                        padding: 14px 0;
-                        width: 160px;
-                        cursor: pointer;
-                        transition: 0.2s;
-                        background-color: lightblue;
-                        border: 2px solid linen;
-                        font-size: 16px;
-                        margin: 0 0 0 14px;
-                    }
-
-                    button:hover {
-                        background-color: cornsilk;
-                        border-color: black;
-                    }
-
-                    button:active {
-                        transform: translateY(2px);
-
-                    }
-                }
-            }
-
-            .picture-container {
+            .profile-parent {
                 display: flex;
                 align-items: center;
-                justify-content: center;
-                box-shadow: 0 1px 0px 0px var($white);
-                border-radius: 50%;
-                height: 380px;
-                width: 380 px;
-                margin: 0 0 0 100px;
+                color: aliceblue;
+                height: 100vh;
+                width: 100vw;
+                padding-left: 5%;
 
-                // .profile-picture {
-                //     height: 92%;
-                //     width: 92%;
-                //     background-image: url('../../assets/profile.jpg');
-                //     background-size: cover;
-                //     border-radius: 50%;
-                //     background-repeat: no-repeat;
-                //     background-position: center;
-                //     padding: 0;
-                // }
+                .profile-details {
+                    a {
+                        text-decoration: none;
+                        color: rgb(255, 255, 255);
+                        padding: 8px;
+                        padding-left: 0;
+                    }
+
+                    .icon{
+                        padding: 4px;
+                    }
+
+                    .icon:hover {
+                        transform: scale(1.5);
+                    }
+
+                    .profile-icons{
+                        display: flex;
+                        justify-content: center;
+                    }
+
+                    .profile-details-name {
+                        font-size: 24px;
+                        font-family: Poppins Semibold;
+
+                        .main-text {
+                            color: $white;
+                        }
+
+                        .emphasis-text {
+                            color: $darkOrange;
+                        }
+                    }
+
+                    .profile-details-role {
+                        display: flex;
+                        flex-direction: column;
+                        margin: 14px 0 24px 0;
+
+                        h1 {
+                            font-size: 40px;
+                        }
+
+                        .profile-role-tagline {
+                            font-size: 19px;
+                            margin: 5px 0 0 0;
+                            font-family: Poppins Light;
+                        }
+                    }
+
+                    .profile-options {
+
+                        button {
+                            border-radius: 50px;
+                            padding: 14px 0;
+                            width: 160px;
+                            cursor: pointer;
+                            transition: 0.2s;
+                            background-color: lightblue;
+                            border: 2px solid linen;
+                            font-size: 16px;
+                            margin: 0 0 0 14px;
+                        }
+
+                        button:hover {
+                            background-color: cornsilk;
+                            border-color: black;
+                        }
+
+                        button:active {
+                            transform: translateY(2px);
+
+                        }
+                    }
+                }
+
+                .picture-container {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    box-shadow: 0 1px 0px 0px $white;
+                    border-radius: 50%;
+                    height: 380px;
+                    width: 380px;
+                    min-height: 380px;
+                    min-width: 380px;
+                    margin: 0 0 0 15%;
+                    margin-right: 5%;
+
+                    .profile-picture {
+                        height: 92%;
+                        width: 92%;
+                        background-image: url('../../assets/profile.jpg');
+                        background-size: cover;
+                        border-radius: 50%;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        padding: 0;
+                    }
+                }
             }
 
+            .bottom-navigation {
+                overflow: hidden;
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                
+                .icon {
+                    color: white;
+                    height: 50%;
+                    width: 50%;
+                    animation: blinker 5s linear infinite;
+                }
+                @keyframes blinker {
+                    50% {
+                    opacity: 0.1;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width: 800px) and (max-width: 1199px){
+    body {
+        margin: 0;
+        overflow: display;
+
+        .intro {
+            display: flex;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            height: 10%;
+            min-height: fit-content;
+            background-image: url('../../assets/bg.jpg');
+            flex-direction: column;
+
+            .profile-parent {
+                display: flex;
+                align-items: center;
+                color: aliceblue;
+                height: 100vh;
+                width: 100vw;
+                padding-left: 5%;
+
+                .profile-details {
+                    a {
+                        text-decoration: none;
+                        color: rgb(255, 255, 255);
+                        padding: 8px;
+                        padding-left: 0;
+                    }
+
+                    .icon{
+                        padding: 4px;
+                    }
+
+                    .icon:hover {
+                        transform: scale(1.5);
+                    }
+
+                    .profile-icons{
+                        display: flex;
+                        justify-content: center;
+                    }
+
+                    .profile-details-name {
+                        font-size: 24px;
+                        font-family: Poppins Semibold;
+
+                        .main-text {
+                            color: $white;
+                        }
+
+                        .emphasis-text {
+                            color: $darkOrange;
+                        }
+                    }
+
+                    .profile-details-role {
+                        display: flex;
+                        flex-direction: column;
+                        margin: 14px 0 24px 0;
+
+                        h1 {
+                            font-size: 40px;
+                        }
+
+                        .profile-role-tagline {
+                            font-size: 19px;
+                            margin: 5px 0 0 0;
+                            font-family: Poppins Light;
+                        }
+                    }
+
+                    .profile-options {
+
+                        button {
+                            border-radius: 50px;
+                            padding: 14px 0;
+                            width: 160px;
+                            cursor: pointer;
+                            transition: 0.2s;
+                            background-color: lightblue;
+                            border: 2px solid linen;
+                            font-size: 16px;
+                            margin: 0 0 0 14px;
+                        }
+
+                        button:hover {
+                            background-color: cornsilk;
+                            border-color: black;
+                        }
+
+                        button:active {
+                            transform: translateY(2px);
+
+                        }
+                    }
+                }
+
+                .picture-container {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    box-shadow: 0 1px 0px 0px $white;
+                    border-radius: 50%;
+                    height: 380px;
+                    width: 380px;
+                    min-height: 380px;
+                    min-width: 380px;
+                    margin: 0 0 0 15%;
+                    margin-right: 5%;
+
+                    .profile-picture {
+                        height: 92%;
+                        width: 92%;
+                        background-image: url('../../assets/profile.jpg');
+                        background-size: cover;
+                        border-radius: 50%;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        padding: 0;
+                    }
+                }
+            }
+
+            .bottom-navigation {
+                overflow: hidden;
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                
+                .icon {
+                    color: white;
+                    height: 65%;
+                    width: 65%;
+                    animation: blinker 5s linear infinite;
+                }
+                @keyframes blinker {
+                    50% {
+                    opacity: 0.1;
+                    }
+                }
+            }
         }
     }
 }
