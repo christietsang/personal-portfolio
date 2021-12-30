@@ -1,8 +1,7 @@
 @import "../../global.scss";
 
-$phone: 640px;
 $tablet: 840px;
-$desktop: 1024px;
+$mobile: 376px;
 
 * {
     outline: none;
@@ -26,15 +25,16 @@ body {
             color: #f0f8ff;
             height: 100vh;
             width: 100vw;
+            padding-left: 5%;
         }
 
         @media screen and (min-width: 0px) and (max-width: $tablet) {
             .profile-parent {
-                display: flex;
                 flex-direction: column-reverse;
                 align-self: center;
                 justify-content: center;
                 max-width: 98vw;
+                padding-left: 0%;
             }
         }
 
@@ -47,26 +47,21 @@ body {
             a {
                 text-decoration: none;
                 color: rgb(255, 255, 255);
-                padding: 8px;
-                padding-left: 0;
-            }
-
-            .icon {
-                padding: 4px;
+                padding: 8px 8px 2px 8px;
             }
 
             .icon:hover {
                 transform: scale(1.5);
             }
-            
+
             .profile-icons {
                 display: flex;
                 justify-content: center;
             }
 
-            @media screen and (min-width: 0px) and (max-width: $tablet) {
-                .profile-icons {
-                    padding-bottom: 5%;
+            @media screen and (min-width: 0) and (max-width: $mobile) {
+                a {
+                    padding: 15px 8px 10px 8px;
                 }
             }
 
@@ -80,6 +75,16 @@ body {
 
                 .emphasis-text {
                     color: $darkOrange;
+                }
+            }
+
+            @media screen and (min-width: 0px) and (max-width: $mobile) {
+                .profile-details-name {
+                    font-size: 25px;
+                }
+
+                .main-text {
+                    padding-bottom: 5%;
                 }
             }
 
@@ -99,6 +104,18 @@ body {
                 }
             }
 
+            @media screen and (min-width: 0px) and (max-width: $mobile) {
+                .profile-details-role {
+                    h1 {
+                        font-size: 30px;
+                    }
+
+                    .profile-role-tagline {
+                        font-size: 17px;
+                    }
+                }
+            }
+
             .profile-options {
 
                 button {
@@ -111,6 +128,14 @@ body {
                     border: 2px solid linen;
                     font-size: 16px;
                     margin: 0 0 0 14px;
+                }
+
+                @media screen and (min-width: 0px) and (max-width: $mobile) {
+                    button {
+                        padding: 9px 0;
+                        width: 120px;
+                        font-size: 15px;
+                    }
                 }
 
                 button:hover {
@@ -139,7 +164,7 @@ body {
             margin-right: 5%;
         }
 
-        @media screen and (min-width: 0px) and (max-width: $desktop) {
+        @media screen and (min-width: 0px) and (max-width: $tablet) {
             .picture-container {
                 height: 270px;
                 width: 270px;
@@ -176,6 +201,13 @@ body {
                 height: 100%;
                 width: 40%;
                 animation: blinker 5s linear infinite;
+            }
+
+            @media screen and (min-width: 0px) and (max-width: $mobile) {
+                .icon {
+                    height: 100%;
+                    width: 30%;
+                }
             }
 
             @keyframes blinker {
