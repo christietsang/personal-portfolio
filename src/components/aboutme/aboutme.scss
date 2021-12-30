@@ -1,0 +1,60 @@
+ @import "src/global.scss";
+
+ .about-container {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     margin: 50px 0 0 0;
+ }
+
+ .about-parent {
+     max-width: 1000px;
+     width: 70%;
+ }
+
+ .about-card {
+     display: flex;
+     width: 100%;
+     box-shadow: 0 2px 20px -2px #1f2235;
+ }
+
+ .about-profile{
+     width: 50%;
+     background-image: url('../../assets/aboutme.jpg');
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-position: center;
+     min-width: 300px;
+     height: 600px;
+     width: 446px;
+ }
+
+ .about-info{
+     width: 48%;
+     text-align: left;
+     padding: 30px;
+     
+}
+
+ .about-description{
+    font-size: 12px;
+ }
+
+ .about-highlights{
+     font-family: "Poppins Bold";
+     font-size: 80px 0;
+ }
+
+ .about-small-heading{
+     font-family: "Poppins Bold";
+     font-size: 14px;
+     margin: 0 0 5px 0;
+ }
+
+ .highlight{
+     display: flex;
+     align-items: center;
+     margin: 5px 0;
+     font-size: 12px;
+ }

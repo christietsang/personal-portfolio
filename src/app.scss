@@ -4,12 +4,13 @@
     .section{
         width: 100%;
         height: calc(100vh - 80px);
-        background-color: lime;
+        background-color: white;
         position: relative;
         top: 80px;
         scroll-behavior: smooth;
         scroll-snap-type: y mandatory;
         scrollbar-width: none;
+        z-index: 0;
         &::-webkit-scrollbar{
             display: none;
         } 

@@ -1,7 +1,9 @@
 import { useEffect, useState } from "react";
 import PortfolioList from "../portfolioList/PortfolioList";
 import "./portfolio.scss";
-import { webAppPortfolio, gameAppPortfolio, designPortfolio } from "../../data";
+import { webAppPortfolio, gameAppPortfolio, designPortfolio } from "./data";
+import ScreenHeading from "../../utilities/headings/ScreenHeading"
+
 
 export default function Portfolio() {
     const [selected, setSelected] = useState("web");
@@ -40,7 +42,7 @@ export default function Portfolio() {
 
     return (
         <div className="portfolio" id="portfolio">
-            <h1>Portfolio</h1>
+            <ScreenHeading title={"My Portfolio"} subHeading={"Personal & School Projects"}/>
             <ul>
                 {list.map((item) => (
                     <PortfolioList
