@@ -3,7 +3,7 @@ import ScreenHeading from "../../utilities/headings/ScreenHeading"
 import "./aboutme.scss"
 
 const INFORMATION = {
-    description: "An aspiring computer software engineer with an interest in automating and optimizing processes.  Skilled in communication, group collaboration and management, and group motivation.",
+    description: "I am an aspiring computer software engineer with an interest in automating and optimizing processes.  Skilled in communication, group collaboration and management, and group motivation.",
     highlights: {
         bullets: [
             "Frontend and Backend web / mobile development",
@@ -27,7 +27,7 @@ const renderAboutMe = () => {
 
 export default function AboutMe() {
     return (
-        <div className='about-container'>
+        <div className='about-container' id="aboutme">
             <div className='about-parent'>
                 <ScreenHeading title={"About Me"} subHeading={"Why Choose Me?"} />
                 <div className="about-card">
@@ -41,9 +41,11 @@ export default function AboutMe() {
                             {renderAboutMe()}
                         </div>
                         <div className="profile-options">
-                        <button className="profile-button">{""}Hire Me{" "}</button>
-                        <a href="Resume.pdf" download="Resume.pdf"><button className="profile-button">Get Resume</button></a>
-                    </div>
+                            <div className="button-box">
+                                <button className="profile-button">{""}Hire Me{" "}</button>
+                                <a href="Resume.pdf" download="Resume.pdf"><button className="profile-button">Get Resume</button></a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
