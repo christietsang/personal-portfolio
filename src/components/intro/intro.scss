@@ -22,10 +22,9 @@ body {
             color: #f0f8ff;
             height: 100vh;
             width: 100vw;
-            padding-left: 5%;
         }
 
-        @media screen and (min-width: 0px) and (max-width: $tablet) {
+        @media screen and (min-width: 0px) and (max-width: $large-tablet) {
             .profile-parent {
                 flex-direction: column-reverse;
                 align-self: center;
@@ -36,10 +35,11 @@ body {
         }
 
         .profile-details {
-            padding: 0;
+            padding: 0px 5%;
             margin: 0;
             align-items: center;
             justify-content: center;
+            min-width: 400px;
 
             a {
                 text-decoration: none;
@@ -56,7 +56,7 @@ body {
                 justify-content: center;
             }
 
-            @media screen and (min-width: 0) and (max-width: $mobile) {
+            @media screen and (min-width: 0) and (max-width: $large-tablet) {
                 a {
                     padding: 15px 8px 10px 8px;
                 }
@@ -66,22 +66,25 @@ body {
                 font-size: 30px;
                 font-family: Poppins Semibold;
 
-                .main-text {
-                    color: $white;
-                }
-
-                .emphasis-text {
-                    color: $darkOrange;
-                }
+            .main-text {
+                color: $white;
+                overflow: hidden;
             }
 
-            @media screen and (min-width: 0px) and (max-width: $mobile) {
+            .emphasis-text {
+                color: $darkOrange;
+            }
+            }
+
+            @media screen and (min-width: 0px) and (max-width: $large-tablet) {
                 .profile-details-name {
                     font-size: 25px;
+                    overflow: visible;
                 }
 
                 .main-text {
                     padding-bottom: 5%;
+
                 }
             }
 
@@ -90,8 +93,9 @@ body {
                 flex-direction: column;
                 margin: 14px 0 24px 0;
 
-                h1 {
+                p {
                     font-size: 40px;
+                    overflow: hidden;
                 }
 
                 .profile-role-tagline {
@@ -101,9 +105,9 @@ body {
                 }
             }
 
-            @media screen and (min-width: 0px) and (max-width: $mobile) {
+            @media screen and (min-width: 0px) and (max-width: $large-tablet) {
                 .profile-details-role {
-                    h1 {
+                    p {
                         font-size: 30px;
                     }
 
@@ -112,37 +116,59 @@ body {
                     }
                 }
             }
-
             .profile-options {
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                width: 100%;
 
-                button {
-                    border-radius: 50px;
-                    padding: 14px 0;
-                    width: 160px;
-                    cursor: pointer;
-                    transition: 0.2s;
-                    background-color: lightblue;
-                    border: 2px solid linen;
-                    font-size: 16px;
-                    margin: 0 0 0 14px;
-                }
+                .button-box {
+                    display: flex;
+                    overflow: visible;
+                    justify-content: space-between;
+                    width: 70%;
+                    min-width: 300px;
+                    max-width: 350px;
 
-                @media screen and (min-width: 0px) and (max-width: $mobile) {
+                    a {
+                        overflow: visible;
+                        padding: 0;
+                        margin: 0;
+                    }
+       
                     button {
-                        padding: 9px 0;
-                        width: 120px;
-                        font-size: 15px;
+                        border-radius: 50px;
+                        padding: 14px 0;
+                        width: 160px;
+                        cursor: pointer;
+                        transition: 0.2s;
+                        background-color: lightblue;
+                        border: 2px solid linen;
+                        font-size: 16px;
+                    }
+
+                    @media screen and (min-width: 0px) and (max-width: 1060px) {
+                        button {
+                            padding: 9px 0;
+                            width: 120px;
+                            font-size: 15px;
+                        }
+                    }
+
+                    button:hover {
+                        background-color: cornsilk;
+                        border-color: black;
+                    }
+
+                    button:active {
+                        transform: translateY(2px);
+
                     }
                 }
-
-                button:hover {
-                    background-color: cornsilk;
-                    border-color: black;
-                }
-
-                button:active {
-                    transform: translateY(2px);
-
+                @media screen and (min-width: 0px) and (max-width: $large-tablet) {
+                    .button-box {
+                        width: 30%;
+                    }
                 }
             }
         }
@@ -157,11 +183,11 @@ body {
             width: 425px;
             min-height: 425px;
             min-width: 425px;
-            margin: 0 0 0 10%;
+            // margin: 0 0 0 10%;
             margin-right: 5%;
         }
 
-        @media screen and (min-width: 0px) and (max-width: $tablet) {
+        @media screen and (min-width: 0px) and (max-width: $large-tablet) {
             .picture-container {
                 height: 270px;
                 width: 270px;
@@ -200,7 +226,7 @@ body {
                 animation: blinker 5s linear infinite;
             }
 
-            @media screen and (min-width: 0px) and (max-width: $mobile) {
+            @media screen and (min-width: 0px) and (max-width: $large-tablet) {
                 .icon {
                     height: 100%;
                     width: 30%;

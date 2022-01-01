@@ -1,3 +1,5 @@
+
+import React from "react";
 import "./testimonials.scss"
 import OwlCarousel from 'react-owl-carousel'
 import "owl.carousel/dist/assets/owl.carousel.css";

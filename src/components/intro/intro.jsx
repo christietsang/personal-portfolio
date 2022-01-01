@@ -53,8 +53,10 @@ export default function Intro() {
                         </span>
                     </div>
                     <div className="profile-options">
-                        <button className="profile-button">{""}Hire Me{" "}</button>
-                        <a href="Resume.pdf" download="Resume.pdf"><button className="profile-button">Get Resume</button></a>
+                        <div className="button-box">
+                            <button className="profile-button">{""}Hire Me{" "}</button>
+                            <a href="Resume.pdf" download="Resume.pdf"><button className="profile-button">Get Resume</button></a>
+                        </div>
                     </div>
                 </div>
                 <div className="picture-container">
