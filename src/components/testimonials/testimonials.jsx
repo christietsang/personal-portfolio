@@ -6,7 +6,6 @@ import "owl.carousel/dist/assets/owl.theme.default.css";
 import ScreenHeading from '../../utilities/headings/ScreenHeading'
 import FormatQuoteRoundedIcon from '@mui/icons-material/FormatQuoteRounded';
 import Footer from "../../assets/footerimage.png";
-// import $ from 'jquery';
 
 export default function Testimonials() {
 
@@ -16,30 +15,20 @@ export default function Testimonials() {
         dots: true,
         nav: true,
         autoplay: true,
-        animateIn: "FadeInRight",
-        animateOut: "FadeOutRight",
-        smartSpeed: 1000,
-        responsiveRefreshRate: 10,
+        smartSpeed: 700,
+        responsiveRefreshRate: 1,
         responsive: {
             0: {
                 items: 1,
             },
             768: {
-                items: 1,
+                items: 2,
             },
             1000: {
                 items: 3,
             },
         }
     }
-    // OwlCarousel();
-
-    // $(window).resize(function () {
-    //     $('.owl-carousel-top').trigger('destroy.owl.carousel').removeClass('owl-carousel owl-loaded');
-    //     $('.owl-carousel-top').find('.owl-stage-outer').children().unwrap();
-
-    //     OwlCarousel();
-    // });
 
     return (
         <div className="testimonial" id="testimonials">
@@ -75,7 +64,7 @@ export default function Testimonials() {
                                     <div className="testimonial-comment">
                                         <FormatQuoteRoundedIcon className="quote-icon" />
                                         <p>
-                                            Christie's role as a child protection social worker requires advanced problem solving, communication, and organization - I have observed Christie excel in these skills and be unfraid to step up to a challenge.
+                                            Christie's role as a child protection social worker requires advanced problem solving, communication, and organization.  Christie excels in these skills and is unfraid to step up to a challenge.
                                         </p>
                                     </div>
                                     <div className="client-info">
@@ -94,7 +83,7 @@ export default function Testimonials() {
                                     <div className="testimonial-comment">
                                         <FormatQuoteRoundedIcon className="quote-icon" />
                                         <p>
-                                            Christie showed initiative and leadership when developing organizational systems and workflows to help improve office efficiency.  She embraces teamwork and is supportive and respectful towards others even when faced with conflict, while maintaining clear communication.
+                                            Christie took the initiative to update organizational systems and workflows to improve office efficiency.  She is supportive, respectful, and maintains clear communication even in the midst of conflict.
                                         </p>
                                     </div>
                                     <div className="client-info">
