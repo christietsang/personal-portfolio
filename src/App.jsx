@@ -7,6 +7,7 @@ import Testimonials from "./components/testimonials/Testimonials";
 import "./app.scss";
 import React, { useState } from "react";
 import AboutMe from "./components/aboutme/AboutMe"
+// import Footer from "./components/footer/Footer"
 
 
 function App() {
@@ -19,7 +20,8 @@ function App() {
         <Intro/>
         <Portfolio/>
         <AboutMe/>
-        <Testimonials/>
+        <Testimonials />
+        {/* <Footer/> */}
         <Contact/>
       </div>
     </div>
