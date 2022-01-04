@@ -42,7 +42,7 @@ export default function AboutMe() {
                         </div>
                         <div className="profile-options">
                             <div className="button-box">
-                                <button className="profile-button">{""}Hire Me{" "}</button>
+                                <a href='#contact'><button className="profile-button">{""}Hire Me{" "}</button></a>
                                 <a href="Resume.pdf" download="Resume.pdf"><button className="profile-button">Get Resume</button></a>
                             </div>
                         </div>
