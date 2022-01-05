@@ -16,6 +16,11 @@
     display: flex;
     border-radius: 12px;
     background-color: #1f2235;
+    overflow: visible;
+}
+
+.col{
+    overflow: visible;
 }
 
 @media screen and (min-width: $large-mobile) and (max-width: $large-tablet) {
@@ -44,6 +49,7 @@
     flex-direction: column;
     border-radius: 12px;
     align-items: center;
+    overflow: visible;
 
     #overlay {
         position: absolute;
@@ -119,6 +125,7 @@
         height: 90%;
         justify-content: space-evenly;
         font-size: 20px;
+        overflow: visible;
 
         .name-container {
             display: flex;
@@ -205,6 +212,7 @@
             display: flex;
             justify-content: center;
             flex-direction: row;
+            overflow: visible;
         }
 
         button {
@@ -225,7 +233,7 @@
 
         .bb8 {
             overflow: visible;
-            max-height: 40px;
+            max-height: 50px;
 
             img {
                 position: relative;
@@ -235,11 +243,6 @@
                 width: auto;
                 padding-left: 50%;
             }
-        }
-
-        p{
-            font-size:40pt;
-            color: red;
         }
     }
 
