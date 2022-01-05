@@ -60,6 +60,9 @@ export default function Contact() {
     }
   };
 
+  const refreshPage = (i) => {
+    window.location.reload(false);
+  }
 
   return (
     <div className="contact" id="contact">
@@ -105,7 +108,9 @@ export default function Contact() {
                   {bool ? (
                     <b className="load">
                       <img src={load1} alt="loading bar" />
-                    </b>) : ("")}
+                      {setTimeout(refreshPage, 2000)}
+                    </b>
+                    ) : ("")}
                 </div>
               </div>
             </form>
