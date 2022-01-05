@@ -2,14 +2,12 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import { toast } from 'react-toastify';
 import './contact.scss';
-import load1 from '../../../src/assets/bb8.gif';
+import load1 from '../../assets/bb8.gif';
 import ScreenHeading from '../../utilities/headings/ScreenHeading';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import EmailIcon from '@mui/icons-material/Email';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import SendTwoToneIcon from '@mui/icons-material/SendTwoTone';
-
-
 
 
 export default function Contact() {

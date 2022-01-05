@@ -102,7 +102,7 @@ export default function Testimonials() {
                                     <div className="testimonial-comment">
                                         <FormatQuoteRoundedIcon className="quote-icon" />
                                         <p>
-                                            Christie is the first person I want to have with me in a group project. She is hardworking, resilient and full of positive energy. One of her strengths is that she never shies away from a challenge.
+                                            Christie is the first person I want to work with in a group project. She is hardworking, resilient and full of positive energy. One of her strengths is that she never shies away from a challenge.
                                         </p>
                                     </div>
                                     <div className="client-info">
