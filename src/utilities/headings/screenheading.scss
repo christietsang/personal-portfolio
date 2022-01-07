@@ -1,0 +1,52 @@
+@import "../../global.scss";
+
+.heading-container {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    width: 100%;
+    overflow: visible;
+    background-color: white;
+    position: relative;
+    z-index: 1;
+
+    .screen-heading {
+        font-size: 32px;
+        color: #353F59;
+        font-family: "Poppins Bold";
+        overflow: visible;
+        min-height: 40px;
+    }
+
+    .screen-sub-heading {
+        letter-spacing: 3px;
+        padding: 2px 0px;
+        font-size: 12px;
+        color: #353F59;
+        overflow: visible;
+    }
+
+    .separator-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .heading-separator {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            width: 200px;
+            margin: 5px 0 10px 0;
+        }
+
+        .separator-line {
+            width: 100%;
+            height: 2px;
+            background-color: #1f2235;
+        }
+    }
+
+}

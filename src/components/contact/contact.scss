@@ -1,0 +1,274 @@
+@import "../../global.scss";
+
+.contact {
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.main-form {
+    width: 60%;
+    height: 70%;
+    padding: 10px;
+    display: flex;
+    border-radius: 12px;
+    background-color: #1f2235;
+    overflow: visible;
+}
+
+.col{
+    overflow: visible;
+}
+
+@media screen and (min-width: $large-mobile) and (max-width: $large-tablet) {
+    .main-form {
+        width: 70%;
+        height: 70%;
+    }
+}
+
+@media screen and (min-width: 0) and (max-width: $large-mobile) {
+    .main-form {
+        width: 90%;
+        height: 75%;
+    }
+}
+
+.inside-container {
+    background-image: url(../../assets/contact-bg-image.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 12px;
+    align-items: center;
+    overflow: visible;
+
+    #overlay {
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 0;
+        opacity: 0.8;
+    }
+
+    .profile-icons {
+        z-index: 2;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: visible;
+        height: auto;
+        width: 100%;
+        margin: 2% 0px 0px 0px;
+
+        a {
+            z-index: 2;
+            position: relative;
+            text-decoration: none;
+            color: black;
+            padding: 8px 8px 2px 8px;
+            overflow: visible;
+        }
+
+        .icon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: visible;
+            height: 30px;
+            width: 30px;
+        }
+
+        .icon:hover {
+            transform: scale(1.5);
+            color: $orange;
+        }
+    }
+
+    @media screen and (min-width: $tablet) and (max-width: $large-tablet) {
+        .profile-icons {
+            margin: 3% 0px 0px 0px;
+        }
+    }
+
+    @media screen and (min-width: $large-mobile) and (max-width: $tablet) {
+        .profile-icons {
+            margin: 3% 0px 0px 0px;
+        }
+    }
+
+    @media screen and (min-width: $mobile) and (max-width: $large-mobile) {
+        .profile-icons {
+            margin: 4% 0px 0px 0px;
+        }
+    }
+
+    @media screen and (min-width: 0) and (max-width: $mobile) {
+        .profile-icons {
+            margin: 6% 0px 0px 0px;
+        }
+    }
+
+    form {
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        height: 90%;
+        justify-content: space-around;
+        font-size: 20px;
+        overflow: visible;
+
+        .name-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        .name-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        .email-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        .message-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            width: 100%;
+            height: 50%;
+        }
+
+        p{
+            color: $orange;
+        }
+
+        label {
+            display: flex;
+            margin: 0;
+            padding: 0;
+            align-items: center;
+            overflow: visible;
+            font-family: "Poppins Bold";
+            letter-spacing: 0.2rem;
+        }
+
+        input {
+            width: 85%;
+            border-radius: 12px;
+            font-size: 11pt;
+            margin-left: 2px;
+        }
+
+        input[type=text] {
+            padding: 1px 5px;
+            font-size: 9pt;
+        }
+
+        textarea[type=text] {
+            padding: 8px 5px;
+            font-size: 9pt;
+        }
+
+        textarea {
+            width: 100%;
+            height: 100%;
+            border-radius: 12px;
+        }
+
+        input,
+        textarea {
+            border: 1px solid white;
+            background-color: #EEEDEF;
+            padding: 0.5rem 1 rem;
+            transition: 0.3s;
+        }
+
+        input:focus {
+            border: 2px solid rgba(30, 85, 250, 0.47);
+            background-color: white;
+        }
+
+        textarea:focus {
+            border: 2px solid rgba(30, 85, 250, 0.47);
+            background-color: white;
+        }
+
+        .send-btn {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            overflow: visible;
+        }
+
+        button {
+            padding: 5px;
+            border: 2px solid rgba(27, 204, 21, 0);
+            border-radius: 5px;
+            font-size: 13pt;
+            width: 70%;
+            background-color: white;
+            color: black;
+            max-height: 40px;
+        }
+
+        button:hover {
+            transition: all ease 1s;
+            border: 2px solid $orange;
+        }
+
+        .bb8 {
+            overflow: visible;
+            max-height: 50px;
+
+            img {
+                position: relative;
+                z-index: 1;
+                overflow: visible;
+                height: 100%;
+                width: auto;
+                padding-left: 50%;
+            }
+        }
+    }
+
+    @media screen and (min-width: $large-tablet) and (max-width: $laptop) {
+        form {
+            width: 70%;
+            height: 90%;
+        }
+    }
+
+    @media screen and (min-width: $large-mobile) and (max-width: $large-tablet) {
+        form {
+            width: 80%;
+            height: 90%;
+        }
+    }
+
+    @media screen and (min-width: 0) and (max-width: $large-mobile) {
+        form {
+            width: 90%;
+            height: 90%;
+        }
+    }
+}

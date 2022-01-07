@@ -1,0 +1,154 @@
+@import "src/global.scss";
+
+.portfolio {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+
+    .header-container {
+        position: relative;
+        width: 100%;
+        margin-top: -360px;
+    
+        img {
+            width: 100%;
+            height: 80%;
+        }
+        @media screen and (min-width: 0) and (max-width: $large-mobile) {
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+
+    ul{
+        padding: 5px;
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        width: 35%;
+        justify-content: space-between;
+
+        li{
+            font-size: 18px;
+            border-radius: 10px;
+            cursor: pointer;
+            padding: 10px;
+            margin: 0;
+            text-align: center;
+            overflow: hidden;
+
+            &.active{
+                background-color: #3B4560;
+                color: white;
+            }
+        }
+        @media screen and (min-width: $mobile) and (max-width: $large-mobile) {
+            li{
+                font-size: 13px;
+            }
+        }
+        @media screen and (min-width: 0) and (max-width: $mobile) {
+            li{
+                font-size: 11px;
+            }
+        }
+    }
+    @media screen and (min-width: 0) and (max-width: $mobile) {
+        ul{
+            width: 55%;
+        }
+    }
+    @media screen and (min-width: $mobile) and (max-width: $tablet) {
+        ul{
+            width: 50%;
+        }
+    }
+    @media screen and (min-width: $tablet) and (max-width: $laptop){
+        ul{
+            width: 33%;
+        }
+    }
+    @media screen and (min-width: $laptop){
+        ul{
+            width: 20%;
+        }
+    }
+    .container {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        .item{
+            width: 300px;
+            height: 205px;
+            border-radius:20px;
+            border: 1px solid lightgrey;
+            align-items: center;
+            justify-content: center;
+            margin: 10px 20px;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.5s ease;
+            cursor: pointer;
+
+            h3{
+                position: absolute;
+                font-size: 25px;
+                text-align: center;
+                overflow: hidden;
+            }
+
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                z-index: -1;
+            }
+            a{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                overflow: hidden;
+                z-index: 1;
+            }
+
+            &:hover{
+                background-color: #3B4560;
+                color: white;
+                img{
+                    opacity: 0.1;
+                    z-index: 0;
+                }
+
+
+            }
+        }
+        @media screen and (min-width: 0) and (max-width: $mobile) {
+            .item{
+                width: 250px;
+                height: 150.6px;
+            }
+        }
+    }
+    @media screen and (min-width: 0) and (max-width: $large-mobile) {
+        .container{
+            flex-direction: column;
+            flex-wrap: nowrap;
+        }
+    }
+
+}
