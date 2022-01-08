@@ -16,7 +16,7 @@ export const gameAppPortfolio = [{
     id: 1,
     title: "BCIT Simulator",
     img: "https://i.ibb.co/w4pTWTd/BCITSimulator.png",
-    link: "https://twitter.ca",
+    link: "https://github.com/christietsang/BCIT-Simulator",
 },
 ];
 

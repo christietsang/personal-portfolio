@@ -35,12 +35,15 @@ export default function Intro() {
                             <h1>
                                 <Typical
                                     loop={Infinity}
+                                    wrapper = 'p'
                                     steps={[
                                         "Enthusiastic Dev",
                                         1000,
-                                        "Full Stack Developer",
+                                        "Detail Oriented",
                                         1000,
-                                        "Motivated Student",
+                                        "Aspiring Developer",
+                                        1000,
+                                        "Health Researcher",
                                         1000,
                                     ]}
                                 />

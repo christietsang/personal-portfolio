@@ -63,9 +63,9 @@ export default function Contact() {
   };
   return (
     <div className="contact" id="contact">
-      {/* <div className="title">
+      <div className="title">
         <ScreenHeading title="Contact Me" subHeading={"Let's Get in Touch!"} />
-      </div> */}
+      </div>
       <div className="main-form">
         <div className="col">
           <div className="inside-container">
