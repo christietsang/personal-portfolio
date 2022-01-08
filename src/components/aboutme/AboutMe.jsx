@@ -1,6 +1,6 @@
-import React, { useEffect } from 'react'
-import ScreenHeading from "../../utilities/headings/ScreenHeading"
-import "./aboutme.scss"
+import React from 'react';
+import ScreenHeading from "../../utilities/headings/ScreenHeading";
+import "./aboutme.scss";
 
 const INFORMATION = {
     description: "I am an aspiring computer software engineer with an interest in automating and optimizing processes.  Skilled in communication, group collaboration and management, and group motivation.",
@@ -29,7 +29,9 @@ export default function AboutMe() {
     return (
         <div className='about-container' id="aboutme">
             <div className='about-parent'>
-                <ScreenHeading title={"About Me"} subHeading={"Why Choose Me?"} />
+                <div className="heading">
+                    <ScreenHeading title={"About Me"} subHeading={"Why Choose Me?"} />
+                </div>
                 <div className="about-card">
                     <div className="about-profile"></div>
                     <div className="about-info">

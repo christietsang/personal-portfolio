@@ -9,9 +9,6 @@ import EmailIcon from '@mui/icons-material/Email';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import SendTwoToneIcon from '@mui/icons-material/SendTwoTone';
 
-
-
-
 export default function Contact() {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
@@ -43,12 +40,11 @@ export default function Contact() {
         email,
         message,
       };
-
       setBool(true);
-      const res = await axios.post(`/Contact`, data);
+      const res = await axios.post(`/contact`, data);
       if (name.length === 0 || email.length === 0 || message.length === 0) {
         setBanner(res.data.msg);
-        console.log(res.data.msg)
+        console.log(res.data.msg);
         toast.error(res.data.msg);
         setBool(false);
         console.log("one param is empty");
@@ -56,23 +52,20 @@ export default function Contact() {
         setBanner(res.data.msg);
         toast.success(res.data.msg);
         setBool(false);
-
         setName("");
         setEmail("");
         setMessage("");
-      } 
+      }
     } catch (error) {
       setBanner("");
-      {setTimeout(refreshPage, 4000)}
+      { setTimeout(refreshPage, 4000) }
     }
   };
-
-
   return (
     <div className="contact" id="contact">
-      <div className="title">
+      {/* <div className="title">
         <ScreenHeading title="Contact Me" subHeading={"Let's Get in Touch!"} />
-      </div>
+      </div> */}
       <div className="main-form">
         <div className="col">
           <div className="inside-container">
@@ -95,14 +88,13 @@ export default function Contact() {
                 <input type="text" onChange={handleName} value={name} />
               </div>
               <div className="email-container">
-                <label htmlFor="name">Email</label>
+                <label htmlFor="email">Email</label>
                 <input type="text" onChange={handleEmail} value={email} />
               </div>
               <div className="message-container">
-                <label htmlFor="name">Message</label>
+                <label htmlFor="message">Message</label>
                 <textarea type="text" onChange={handleMessage} value={message} />
               </div>
-
               <div className="send-btn">
                 <button type="submit">
                   Send
@@ -113,7 +105,7 @@ export default function Contact() {
                     <b className="load">
                       <img src={load1} alt="loading bar" />
                     </b>
-                    ) : ("")}
+                  ) : ("")}
                 </div>
               </div>
             </form>
