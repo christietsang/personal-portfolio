@@ -98,3 +98,15 @@
     }
     }
 }
+
+@media screen and (min-width: 0) and (max-width: $mobile) {
+    .topbar {
+        .wrapper {
+            .left {
+                .title {
+                    font-size: 28px;
+                }
+            }
+        }
+    }
+}
