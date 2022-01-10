@@ -39,6 +39,7 @@ body {
             height: 100vh;
             width: 100vw;
             overflow: hidden;
+            justify-content: center;
         }
 
         @media screen and (min-width: 0px) and (max-width: $large-tablet) {

@@ -1,7 +1,7 @@
 @import "src/global.scss";
 
 .portfolio {
-    background-color: white;
+    background-color: #c5cee4;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -19,10 +19,6 @@
             max-height: 233px;
             min-height: 90px;
         }
-    }
-
-    .heading-container{
-        // margin-top: 10%;
     }
 
     ul{
@@ -84,10 +80,11 @@
         justify-content: center;
         flex-direction: row;
         flex-wrap: wrap;
+        margin-top: 4%;
 
         .item{
-            width: 300px;
-            height: 205px;
+            width: 400px;
+            height: 275px;
             border-radius:20px;
             border: 1px solid lightgrey;
             align-items: center;
@@ -134,10 +131,39 @@
 
             }
         }
+        @media screen and (min-height: 0px) and (max-height: 868px)and (min-width: $large-tablet) {
+            .item{
+                width: 300px;
+                height: 205px;
+                margin: 0 20px;
+            }
+        }
+        @media screen and (min-width: $tablet) and (max-width: $large-tablet) {
+            .item{
+                width: 275px;
+                height: 150.6px;
+                margin: 2px 20px;
+            }
+        }
+        @media screen and (min-width: $large-mobile) and (max-width: $tablet) {
+            .item{
+                width: 250px;
+                height: 187.6px;
+                margin: 2px 20px;
+            }
+        }
+        @media screen and (min-width: $mobile) and (max-width: $large-mobile) {
+            .item{
+                width: 250px;
+                height: 150.6px;
+                margin: 2px 20px;
+            }
+        }
         @media screen and (min-width: 0) and (max-width: $mobile) {
             .item{
                 width: 250px;
                 height: 150.6px;
+                margin: 2px 20px;
             }
         }
     }
@@ -145,6 +171,12 @@
         .container{
             flex-direction: column;
             flex-wrap: nowrap;
+            margin-top: 0;
+        }
+    }
+    @media screen and (min-height: 0px) and (max-height: 868px)and (min-width: $large-tablet) {
+        .container{
+            margin-top: 1%;
         }
     }
 

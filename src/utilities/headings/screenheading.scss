@@ -9,7 +9,7 @@
     padding: 0;
 
     .screen-heading {
-        font-size: 32px;
+        font-size: 36px;
         color: #1f2235;
         font-family: "Poppins Bold";
         overflow: hidden;
@@ -18,7 +18,7 @@
     .screen-sub-heading {
         letter-spacing: 3px;
         padding: 2px 0px;
-        font-size: 12px;
+        font-size: 16px;
         color: $black;
         overflow: visible;
     }
@@ -27,7 +27,7 @@
         display: flex;
         align-items: center;
         position: relative;
-        width: 180px;
+        width: 300px;
         margin: 10px 0 10px 0;
     }
 
