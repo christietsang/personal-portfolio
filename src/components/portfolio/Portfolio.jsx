@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import PortfolioList from "../portfolioList/PortfolioList";
 import "./portfolio.scss";
-import { webAppPortfolio, gameAppPortfolio, designPortfolio } from "./data";
+import { webAppPortfolio, gameAppPortfolio, designPortfolio, artificialIntelligencePortfolio } from "./data";
 import ScreenHeading from "../../utilities/headings/ScreenHeading"
 import Header from "../../assets/blue-swoop.png";
 
@@ -19,6 +19,10 @@ export default function Portfolio() {
             title: "Games",
         },
         {
+            id: "artificialIntelligence",
+            title: "AI",
+        },
+        {
             id: "design",
             title: "Design",
         },
@@ -31,6 +35,9 @@ export default function Portfolio() {
                 break;
             case "game":
                 setData(gameAppPortfolio);
+                break;
+            case "artificialIntelligence":
+                setData(artificialIntelligencePortfolio);
                 break;
             case "design":
                 setData(designPortfolio);

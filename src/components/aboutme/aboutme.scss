@@ -352,8 +352,6 @@
     }
 }
 
-
-
  .profile-options {
      display: flex;
      align-items: center;
@@ -362,14 +360,12 @@
      height: auto;
      overflow: visible;
 
-
      .button-box {
          display: flex;
          overflow: visible;
          justify-content: space-between;
-         width: 50%;
          min-width: 226px;
-         max-width: 250px;
+         max-width: 275px;
 
          a {
              overflow: visible;
@@ -385,9 +381,10 @@
              border: 2px solid linen;
              font-size: 16px;
              overflow: visible;
+             margin: 0;
          }
 
-         @media screen and (min-width: 0) and (max-width: $mobile) {
+        @media screen and (min-width: 0) and (max-width: $mobile) {
              button {
                  width: 80px;
                  font-size: 10px;
@@ -403,22 +400,23 @@
          }
         @media screen and (min-width: $large-mobile) and (max-width: $tablet) {
              button {
-                 width: 130px;
-                 font-size: 15px;
+                 width: 150px;
+                 font-size: 18px;
                  padding: 6px 0;
              }
          }
-         @media screen and (min-width: $tablet) and (max-width: $large-tablet) {
+        @media screen and (min-width: $tablet) and (max-width: $large-tablet) {
             button {
                 width: 150px;
                 font-size: 18px;
                 padding: 10px 0;
             }
         }
-        @media screen and (min-width: $large-tablet) {
+        @media screen and (min-width: $large-tablet) and (max-width: $laptop) {
             button {
-                width: 150px;
+                width: 130px;
                 font-size: 18px;
+                padding: 5px 0;
             }
             @media screen and (max-height: 901px) {
                 button {
@@ -449,7 +447,7 @@
      }
      @media screen and (min-width: $large-tablet) {
         .button-box {
-            width: 70%;
+            width: 100%;
             max-width: 380px;
         }
      }

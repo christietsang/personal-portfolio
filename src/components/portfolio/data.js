@@ -19,6 +19,13 @@ export const gameAppPortfolio = [{
     link: "https://github.com/christietsang/BCIT-Simulator",
 },
 ];
+export const artificialIntelligencePortfolio = [{
+    id: 1,
+    title: "Outliner Discord Bot",
+    img: "https://i.ibb.co/rwp6qnT/Outliner.png",
+    link: "https://github.com/christietsang/nwHacks2022",
+},
+];
 
 export const designPortfolio = [{
     id: 1,
