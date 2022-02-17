@@ -2,7 +2,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-This is a personal portfolio website created to provide a personal introduction as well as showcasing my personal projects.
+This is a personal portfolio website created to provide a personal introduction and to showcase my projects.
 
 ## Features 📋
 ⚡️ Fully Responsive\
@@ -47,4 +47,5 @@ Christie Tsang
 Project Link: [https://github.com/christietsang/personal-portfolio](https://github.com/christietsang/personal-portfolio)
 
 
+Credits to Ehizeex Okwuose for his tutorials on creating React pages.
 

@@ -6,10 +6,10 @@ const INFORMATION = {
     description: "I am an aspiring computer software engineer with an interest in automating and optimizing processes.  Skilled in communication, group collaboration and management, and group motivation.",
     highlights: {
         bullets: [
-            "📱 Frontend and Backend web / mobile development",
-            "🐍 Game development using Python",
-            "⚗  Experience with React",
-            "⚒ Creating and managing databases"
+            "📲 Frontend and Backend Web / Mobile Dev",
+            "🐍 Artificial Intelligence and Game Dev in Python",
+            "⚛️ Experience with React",
+            "🎫 Creating and managing databases"
         ],
         heading: "Experience Highlights:"
     }
