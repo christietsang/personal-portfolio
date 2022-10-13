@@ -14,10 +14,12 @@ const INFORMATION = {
         heading: "Experience Highlights:"
     }
 }
+
+{/* Loops through array and renders each element in bullets */}
 const renderAboutMe = () => {
     return (
-        INFORMATION.highlights.bullets.map((value, i) => (
-            <div className="highlight" key={i}>
+        INFORMATION.highlights.bullets.map((value) => (
+            <div className="highlight">
                 <div className="highlighted"></div>
                 <span>{value}</span>
             </div>
@@ -29,6 +31,7 @@ export default function AboutMe() {
     return (
         <div className='about-container' id="aboutme">
             <div className='about-parent'>
+                {/* Loading heading and subheading for about me section. */}
                 <div className="heading">
                     <ScreenHeading title={"About Me"} subHeading={"Why Choose Me?"} />
                 </div>
@@ -43,9 +46,10 @@ export default function AboutMe() {
                             {renderAboutMe()}
                         </div>
                         <div className="profile-options">
+                            {/* Contains "Hire Me" and "Get Resume" buttons */}
                             <div className="button-box">
-                                <a href='#contact'><button className="profile-button">{""}Hire Me{" "}</button></a>
-                                <a href="Resume.pdf" download="Resume.pdf"><button className="profile-button">Get Resume</button></a>
+                                <a href='#contact'><button className="profile-button">Hire Me</button></a>
+                                <a href="Christie Tsang - Resume.pdf" download="Christie Tsang - Resume.pdf"><button className="profile-button">Get Resume</button></a>
                             </div>
                         </div>
                     </div>

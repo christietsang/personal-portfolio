@@ -33,12 +33,7 @@ export const designPortfolio = [{
     img: "https://i.ibb.co/sjGRFft/Pandemic-Travel-Figma.png",
     link: "https://www.figma.com/file/4EK0OIAYEbB1tf9sf7A61C/PandemicTravel?node-id=85%3A134",
 },
-// {
-//     id: 2,
-//     title: "myPortfolio Design",
-//     img: "https://dummyimage.com/200x200/000000/fff",
-//     link: "https://yahoo.ca",
-// },
+
 {
     id: 3,
     title: "DeskBuddy Design",

@@ -63,6 +63,7 @@ export default function Contact() {
   };
   return (
     <div className="contact" id="contact">
+      {/* Loading heading and subheading for about me section. */}
       <div className="title">
         <ScreenHeading title="Contact Me" subHeading={"Let's Get in Touch!"} />
       </div>
@@ -70,6 +71,7 @@ export default function Contact() {
         <div className="col">
           <div className="inside-container">
             <div id="overlay" />
+            {/* Icons and hyperlink for social media */}
             <div className="profile-icons">
               <a href="https://www.linkedin.com/in/christietsang/">
                 <LinkedInIcon className="icon" />

@@ -57,7 +57,7 @@ export default function Intro() {
                     <div className="profile-options">
                         <div className="button-box">
                             <a href='#contact'><button className="profile-button">{""}Hire Me{" "}</button></a>
-                            <a href="Resume.pdf" download="Resume.pdf"><button className="profile-button">Get Resume</button></a>
+                            <a href="Christie Tsang - Resume.pdf" download="Christie Tsang - Resume.pdf"><button className="profile-button">Get Resume</button></a>
                         </div>
                     </div>
                 </div>

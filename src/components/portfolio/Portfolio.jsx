@@ -8,7 +8,7 @@ import Header from "../../assets/blue-swoop.png";
 
 export default function Portfolio() {
     const [selected, setSelected] = useState("web");
-    const [data, setData] = useState([]);
+    const [data, setData] = useState(webAppPortfolio);
     const list = [
         {
             id: "web",
@@ -46,14 +46,14 @@ export default function Portfolio() {
                 setData(webAppPortfolio);
         }
 
-    }, [selected]);
+    });
 
     return (
         <div className="portfolio" id="portfolio">
             <div className="header-container">
                 <img src={Header} alt="header image" />
             </div>
-            <ScreenHeading title={"My Portfolio"} subHeading={"Personal & School Projects"}/>
+            <ScreenHeading title={"My Portfolio"} subHeading={"Personal & School Projects"} />
             <ul>
                 {list.map((item) => (
                     <PortfolioList
@@ -65,15 +65,15 @@ export default function Portfolio() {
                 ))}
             </ul>
             <div className="container">
-                {data.map((datas) => (
+                {data.map((item) => (
                     <div className="item">
-                        <a href={datas.link}>
+                        <a href={item.link}>
                             <img
-                                src={datas.img}
+                                src={item.img}
                                 alt=""
                             />
                         </a>
-                        <h3>{datas.title}</h3>
+                        <h3>{item.title}</h3>
                     </div>
                 ))}
             </div>

@@ -1,7 +1,8 @@
+// Import fonts
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;700;900&display=swap');
 
-
+// Set colors as constant variables
 $mainColor: #787777;
 $light-blue : #04C3FF;
 $light-blue-shadow:  rgb(69 211 255 / 27%);
@@ -15,12 +16,6 @@ $darkOrange: #FF5823;
 $orange-shadow: rgba(245, 127, 23,0.2);
 $white: #ffffff;
 $black: #333333;
-$disabled-btn: #09bead7a;
-$error-message:  #e44f4fd1;
-$toast-error: #e44f4ffa;
-$toast-shadow:  #9c9c9ce3;
-$toast-success: #0CBFAE;
-$loader-color: #0CBFAE;
 
 /* DIMENSIONS*/
 $laptop: 1440px;
