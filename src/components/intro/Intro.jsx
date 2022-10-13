@@ -32,8 +32,8 @@ export default function Intro() {
                     <div className="profile-details-role">
                         <span className="main-text">
                             <span className="profile-role-tagline">
-                                A self-motivated and inquisitive computer science student who
-                                enjoys the process of problem-solving.
+                                A driven and curious software developer who
+                                enjoys building scalable and human centered products that positively impact communities.
                             </span>
                         </span>
                     </div>

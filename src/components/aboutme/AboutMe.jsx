@@ -3,15 +3,19 @@ import ScreenHeading from "../../utilities/headings/ScreenHeading";
 import "./aboutme.scss";
 
 const INFORMATION = {
-    description: "I am an aspiring computer software engineer with an interest in automating and optimizing processes.  Skilled in communication, group collaboration and management, and group motivation.",
+    description: "Asoftware developer intern at Clio with an interest in building impactful, accessible, and inclusive products. Skilled in communication and organization.",
     highlights: {
+        heading: "Recent Technologies:",
         bullets: [
-            "📲 Frontend and Backend Web / Mobile Dev",
-            "🐍 Artificial Intelligence and Game Dev in Python",
-            "⚛️ Experience with React",
-            "🎫 Creating and managing databases"
-        ],
-        heading: "Experience Highlights:"
+            " MongoDB",
+            "Express",
+            "React.js",
+            "Node.js",
+            "Ruby on Rails",
+            "Typescript",
+            "Python",
+            "Java"
+        ]
     }
 }
 

@@ -86,15 +86,15 @@ export default function Contact() {
             <form onSubmit={submitForm}>
               <p>{banner}</p>
               <div className="name-container">
-                <label htmlFor="name">Name</label>
-                <input type="text" onChange={handleName} value={name} />
+                <label htmlFor="name">Name:</label>
+                <input type="text" placeholder = "Your name" onChange={handleName} value={name} />
               </div>
               <div className="email-container">
-                <label htmlFor="email">Email</label>
+                <label htmlFor="email">Email:</label>
                 <input type="text" onChange={handleEmail} value={email} />
               </div>
               <div className="message-container">
-                <label htmlFor="message">Message</label>
+                <label htmlFor="message">Message:</label>
                 <textarea type="text" onChange={handleMessage} value={message} />
               </div>
               <div className="send-btn">

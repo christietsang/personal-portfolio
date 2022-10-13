@@ -69,7 +69,7 @@
         overflow: visible;
         height: auto;
         width: 100%;
-        margin: 2% 0px 0px 0px;
+        margin: 5% 0px 0px 0px;
 
         a {
             z-index: 2;
@@ -85,8 +85,8 @@
             justify-content: center;
             align-items: center;
             overflow: visible;
-            height: 30px;
-            width: 30px;
+            height: 50px;
+            width: 50px;
         }
 
         .icon:hover {
@@ -125,7 +125,7 @@
         flex-direction: column;
         align-items: center;
         width: 50%;
-        height: 90%;
+        height: 70%;
         justify-content: space-around;
         font-size: 24px;
         overflow: visible;
@@ -176,18 +176,16 @@
         input {
             width: 85%;
             border-radius: 12px;
-            font-size: 11pt;
-            margin-left: 2px;
         }
 
         input[type=text] {
-            padding: 1px 5px;
-            font-size: 9pt;
+            padding: 8px 10px;
+            font-size: 12pt;
         }
 
         textarea[type=text] {
-            padding: 8px 5px;
-            font-size: 9pt;
+            padding: 10px;
+            font-size: 12pt;
         }
 
         textarea {
@@ -256,21 +254,37 @@
     @media screen and (min-width: $large-tablet) and (max-width: $laptop) {
         form {
             width: 70%;
-            height: 90%;
+            height: 75%;
         }
     }
 
     @media screen and (min-width: $large-mobile) and (max-width: $large-tablet) {
         form {
-            width: 80%;
-            height: 90%;
+            width: 90%;
+            height: 75%;
+
+            input[type=text] {
+                font-size: 10pt;
+            }
+    
+            textarea[type=text] {
+                font-size: 10pt;
+            }
         }
     }
 
     @media screen and (min-width: 0) and (max-width: $large-mobile) {
         form {
             width: 90%;
-            height: 90%;
+            height: 75%;
+
+            input[type=text] {
+                font-size: 10pt;
+            }
+    
+            textarea[type=text] {
+                font-size: 10pt;
+            }
         }
     }
 }

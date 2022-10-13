@@ -76,17 +76,15 @@ body {
                 display: flex;
                 justify-content: center;
                 overflow: visible;
-
-            }
-
-            @media screen and (min-width: 0) and (max-width: $large-tablet) {
-                a {
-                    padding: 15px 8px 10px 8px;
+                padding: 1%;
+                .icon {
+                    height: 50px;
+                    width: 50px;
                 }
             }
 
             .profile-details-name {
-                font-size: 30px;
+                font-size: 60px;
                 font-family: Poppins Semibold;
 
             .main-text {
@@ -96,40 +94,51 @@ body {
 
             .emphasis-text {
                 color: $darkOrange;
-            }
-            }
+            }}
 
             @media screen and (min-width: 0px) and (max-width: $large-tablet) {
+                a {
+                    padding: 15px 8px 10px 8px;
+                }
+
                 .profile-details-name {
                     font-size: 25px;
                     overflow: visible;
                 }
 
                 .main-text {
-                    padding-bottom: 5%;
-
+                    padding: 1%;
                 }
             }
 
             .profile-details-role {
                 display: flex;
-                flex-direction: column;
                 margin: 14px 0 24px 0;
-
+                max-width: 40vw;
+                background: rgba(22, 29, 42, 0.4);
+                padding: 1%;
+                border-radius: 25px;
                 p {
                     font-size: 40px;
                     overflow: hidden;
                 }
-
                 .profile-role-tagline {
-                    font-size: 22px;
+                    font-size: 30px;
                     margin: 5px 0 0 0;
                     font-family: Poppins Light;
+                    color: $white;
+                    font-style: bold;
                 }
             }
 
             @media screen and (min-width: 0px) and (max-width: $large-tablet) {
+
                 .profile-details-role {
+                    max-width: 95vw;
+                    margin: auto;
+                    padding-bottom: 1%;
+                    padding-top: 1%;
+
                     p {
                         font-size: 30px;
                     }
@@ -137,7 +146,20 @@ body {
                     .profile-role-tagline {
                         font-size: 19px;
                     }
+
+                    .icon {
+                        height: 20px;
+                        width: 20px;
+                    }
                 }
+
+                .profile-icons {
+                    .icon {
+                        height: 30px;
+                        width: 30px;
+                    }
+                }
+
             }
             .profile-options {
                 display: flex;
