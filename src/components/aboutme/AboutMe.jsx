@@ -15,7 +15,7 @@ const INFORMATION = {
     }
 }
 
-{/* Loops through array and renders each element in bullets */}
+/* Loops through array and renders each element in bullets */
 const renderAboutMe = () => {
     return (
         INFORMATION.highlights.bullets.map((value) => (
