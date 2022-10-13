@@ -3,7 +3,6 @@ import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import EmailIcon from '@mui/icons-material/Email';
 import GitHubIcon from '@mui/icons-material/GitHub';
-import Typical from 'react-typical';
 
 export default function Intro() {
     return (
@@ -32,22 +31,6 @@ export default function Intro() {
                     </div>
                     <div className="profile-details-role">
                         <span className="main-text">
-                            <h1>
-                                <Typical
-                                    loop={Infinity}
-                                    wrapper = 'p'
-                                    steps={[
-                                        "Enthusiastic Dev",
-                                        1000,
-                                        "Detail Oriented",
-                                        1000,
-                                        "Aspiring Developer",
-                                        1000,
-                                        "Health Researcher",
-                                        1000,
-                                    ]}
-                                />
-                            </h1>
                             <span className="profile-role-tagline">
                                 A self-motivated and inquisitive computer science student who
                                 enjoys the process of problem-solving.
